@@ -130,17 +130,14 @@ elif menu == "CV":
     # Add CV PDF
     st.header("CURRICULUM VITAE")
 
-    # Google Drive file ID
+   # Add CV PDF
+    st.header("CURRICULUM VITAE")
+
     CV_file_id = "1R8WhqJAw67WaXbiAYgebfRZ5NbSncJfx"
-    pdf_url = f"https://drive.google.com/uc?export=download&id={CV_file_id}"
 
-    # PDF from Google Drive
-    response = requests.get(pdf_url)
-    base64_pdf = base64.b64encode(response.content).decode('utf-8')
-
-    # Display PDF
-    pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+# Use Google Drive's preview directly
+    pdf_preview = f'<iframe src="https://drive.google.com/file/d/{CV_file_id}/preview" width="700" height="1000" allow="autoplay"></iframe>'
+    st.markdown(pdf_preview, unsafe_allow_html=True)
 
    
 elif menu == "Contact":
@@ -169,4 +166,5 @@ elif menu == "Contact":
                 else:
                     st.success("Thank you! Your message has been sent.")
                     
+
     st.markdown("_********Contact does not work, beyond my scope of Python, just a proof of concept.********_",)
