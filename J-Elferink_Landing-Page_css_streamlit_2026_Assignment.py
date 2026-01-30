@@ -131,8 +131,6 @@ elif menu == "CV":
     st.header("CURRICULUM VITAE")
 
    # Add CV PDF
-    st.header("CURRICULUM VITAE")
-
     CV_file_id = "1R8WhqJAw67WaXbiAYgebfRZ5NbSncJfx"
 
 # Use Google Drive's preview directly
@@ -168,3 +166,4 @@ elif menu == "Contact":
                     
 
     st.markdown("_********Contact does not work, beyond my scope of Python, just a proof of concept.********_",)
+
