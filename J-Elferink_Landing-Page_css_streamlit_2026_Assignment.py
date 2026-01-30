@@ -98,11 +98,10 @@ elif menu == "Publications & Outputs":
 
 elif menu == "Education":
     st.title("Education")
-    st.sidebar.header("Data Selection")
+    st.sidebar.header("Degree")
     
     # Tabbed view for STEM data
     data_option = st.sidebar.selectbox(
-        "Choose a dataset to explore", 
         ["Undergrad", "Honours", "Masters"]
     )
 
@@ -166,4 +165,5 @@ elif menu == "Contact":
                     
 
     st.markdown("_********Contact does not work, beyond my scope of Python, just a proof of concept.********_",)
+
 
