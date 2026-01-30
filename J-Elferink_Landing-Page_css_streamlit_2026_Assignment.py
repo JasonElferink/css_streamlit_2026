@@ -102,6 +102,7 @@ elif menu == "Education":
     
     # Tabbed view for STEM data
     data_option = st.sidebar.selectbox(
+        "Choose a Degree",
         ["Undergrad", "Honours", "Masters"]
     )
 
