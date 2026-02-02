@@ -171,7 +171,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://wallup.net/wp-content/uploads/2016/05/26/155681-digital_art-simple_background-DNA-genetics-science-artwork-chemistry.jpg");
+        background-image: url("https://static.vecteezy.com/system/resources/previews/021/916/442/original/hexagonal-with-glowing-particles-on-dark-blue-background-science-technology-medicine-chemistry-data-network-background-design-illustration-vector.jpg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -180,6 +180,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 
 
 
