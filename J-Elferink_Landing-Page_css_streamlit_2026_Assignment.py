@@ -13,13 +13,13 @@ import requests
 # Set page title
 st.set_page_config(page_title="Jason Elferink", layout="wide")
 
-# Sidebar Menu
-st.sidebar.title("Navigation")
-menu = st.sidebar.radio(
-    "Go to:",
-    ["About", "Education","Publications & Outputs", "CV", "Contact"],
-)
-
+#Menu
+menu = st.radio(
+        "Go to:",
+        ["About", "Education", "Publications & Outputs", "CV", "Contact"],
+        horizontal=True,
+        label_visibility="collapsed",
+    )
 #Studies info
 Undergrad = pd.DataFrame({
     "BSc in Microbiology and Biochemistry at North-West University": ["Year 1", "Year 2", "Year 3"],
@@ -166,5 +166,20 @@ elif menu == "Contact":
                     
 
     st.markdown("_********Contact does not work, beyond my scope of Python, just a proof of concept.********_",)
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("https://wallup.net/wp-content/uploads/2016/05/26/155681-digital_art-simple_background-DNA-genetics-science-artwork-chemistry.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 
